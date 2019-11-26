@@ -9,8 +9,10 @@ namespace IcelandProductTest.Console
         {
             foreach (var product in products)
             {
-                if(product.Type != "Soap")
-                    product.SellInDays--;
+                if (product.Type == "Soap")
+                    continue;
+
+                product.SellInDays--;
 
                 switch (product.Type)
                 {

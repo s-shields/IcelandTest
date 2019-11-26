@@ -68,7 +68,7 @@ namespace IcelandProductTest.MSUnitTest
         }
 
         [TestMethod]
-        public void IncreasedQuality_IncreasingProductQuailtyLessThan50_QualityReturns49()
+        public void DencreasedQuality_DecreasingProductQuailtyLessThan50_QualityReturns49()
         {
             //Arrange
             int productQuality = 50;
@@ -83,10 +83,10 @@ namespace IcelandProductTest.MSUnitTest
         }
 
         [TestMethod]
-        public void IncreasedQuality_IncreasingProductQuailtyMoreThan50_QualityReturns50()
+        public void DecreasedQuality_DecreasingProductQuailtyMoreThan50_QualityReturns50()
         {
             //Arrange
-            int productQuality = 50;
+            int productQuality = 52;
             int qualityDecreaseAmount = 1;
 
             ProductChecker productChecker = new ProductChecker();
@@ -98,11 +98,11 @@ namespace IcelandProductTest.MSUnitTest
         }
 
         [TestMethod]
-        public void IncreasedQuality_IncreasingProductQuailtyTo50_QualityReturns50()
+        public void DecreasedQuality_DecreasingProductQuailtyTo50_QualityReturns50()
         {
             //Arrange
-            int productQuality = 50;
-            int qualityDecreaseAmount = 0;
+            int productQuality = 51;
+            int qualityDecreaseAmount = 1;
 
             ProductChecker productChecker = new ProductChecker();
             //Act
