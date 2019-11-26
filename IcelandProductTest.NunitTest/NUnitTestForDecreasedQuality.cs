@@ -12,11 +12,11 @@ namespace IcelandProductTest.NunitTest
         {
             //Arrange
             int productQuality = 15;
-            int qualityIncreaseAmount = 5;
+            int qualityDecreaseAmount = 5;
 
             ProductChecker productChecker = new ProductChecker();
             //Act
-            var result = productChecker.DecreaseQuality(productQuality, qualityIncreaseAmount);
+            var result = productChecker.DecreaseQuality(productQuality, qualityDecreaseAmount);
 
             //Assert
             Assert.AreEqual(10, result);
@@ -27,11 +27,11 @@ namespace IcelandProductTest.NunitTest
         {
             //Arrange
             int productQuality = -5;
-            int qualityIncreaseAmount = 6;
+            int qualityDecreaseAmount = 6;
 
             ProductChecker productChecker = new ProductChecker();
             //Act
-            var result = productChecker.DecreaseQuality(productQuality, qualityIncreaseAmount);
+            var result = productChecker.DecreaseQuality(productQuality, qualityDecreaseAmount);
 
             //Assert
             Assert.AreEqual(0, result);
@@ -42,11 +42,11 @@ namespace IcelandProductTest.NunitTest
         {
             //Arrange
             int productQuality = 2;
-            int qualityIncreaseAmount = 1;
+            int qualityDecreaseAmount = 1;
 
             ProductChecker productChecker = new ProductChecker();
             //Act
-            var result = productChecker.DecreaseQuality(productQuality, qualityIncreaseAmount);
+            var result = productChecker.DecreaseQuality(productQuality, qualityDecreaseAmount);
 
             //Assert
             Assert.AreEqual(1, result);
@@ -57,11 +57,11 @@ namespace IcelandProductTest.NunitTest
         {
             //Arrange
             int productQuality = 0;
-            int qualityIncreaseAmount = 0;
+            int qualityDecreaseAmount = 0;
 
             ProductChecker productChecker = new ProductChecker();
             //Act
-            var result = productChecker.DecreaseQuality(productQuality, qualityIncreaseAmount);
+            var result = productChecker.DecreaseQuality(productQuality, qualityDecreaseAmount);
 
             //Assert
             Assert.AreEqual(0, result);
@@ -72,11 +72,11 @@ namespace IcelandProductTest.NunitTest
         {
             //Arrange
             int productQuality = 50;
-            int qualityIncreaseAmount = 1;
+            int qualityDecreaseAmount = 1;
 
             ProductChecker productChecker = new ProductChecker();
             //Act
-            var result = productChecker.DecreaseQuality(productQuality, qualityIncreaseAmount);
+            var result = productChecker.DecreaseQuality(productQuality, qualityDecreaseAmount);
 
             //Assert
             Assert.AreEqual(49, result);

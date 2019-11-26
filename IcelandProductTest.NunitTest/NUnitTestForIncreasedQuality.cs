@@ -41,7 +41,7 @@ namespace IcelandProductTest.NunitTest
         public void IncreasedQuality_IncreasingProductQuailtyMoreThan50_QualityReturns50()
         {
             //Arrange
-            int productQuality = 51;
+            int productQuality = 50;
             int qualityIncreaseAmount = 1;
 
             ProductChecker productChecker = new ProductChecker();
