@@ -1,17 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
 using IcelandProductTest.Console;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+using NUnit.Framework;
 
-namespace IcelandProductTest.MSUnitTest
+namespace IcelandProductTest.NunitTest
 {
-    [TestClass]
-    public class MSUnitTestForProductChecker
+    [TestFixture]
+    public class NUnitTestForProductChecker
     {
         public List<Product> products = new List<Product>();
         public List<Product> expectedProducts = new List<Product>();
 
-        [TestMethod]
+        [Test]
         public void ProductUpdater_UpdateProductList_ReturnExpectedResults()
         {
             //Arrange

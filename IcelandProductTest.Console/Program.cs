@@ -13,10 +13,12 @@ namespace IcelandProductTest.Console
         static void Main(string[] args)
         {
             SetTestData();
+            System.Console.WriteLine("Test Data Setup");
 
             var productChecker = new ProductChecker();
 
             productChecker.ProductUpdater(products);
+            System.Console.WriteLine("Products Updated");
 
             foreach (var item in products)
             {

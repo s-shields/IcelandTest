@@ -51,6 +51,8 @@
   <ItemGroup>
     <Compile Include="MSUnitTestForProductChecker.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="MSUnitTestForIncreasedQuality.cs" />
+    <Compile Include="MSUnitTestForDecreasedQuality.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
