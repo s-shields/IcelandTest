@@ -43,8 +43,6 @@ namespace IcelandProductTest.Console
                             product.Quality = 0;
 
                         break;
-                    case "Soap":
-                        break;
                     case "Frozen Food":
                         product.Quality = DecreaseQuality(product.Quality, 1);
                         break;
